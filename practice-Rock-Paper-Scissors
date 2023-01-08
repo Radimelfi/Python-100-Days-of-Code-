@@ -1,0 +1,56 @@
+""" ROCK PAPER SCISSORS """
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+#Write your code below this line 👇
+import random
+
+guy = int(
+    input(
+        "what do you choise ? type 0 for rock, 1 for perper, 2 for scissors: ")
+)
+computer = random.randint(0, 2)
+print(f"computer choise {computer}")
+#rulers
+#as scissors2 cuts paper1, paper1 covers rock 0, and rocks0 crushes scissors2,
+if guy == 2 and computer == 1:
+    if guy == 2:
+        print("you won!")
+    else:
+        print("ohhh, you lost!  ")
+
+if guy == 1 and computer == 0:
+    if guy == 1:
+        print("you won!")
+    else:
+        print("Unluck, you lost!")
+
+if guy == 0 and computer == 2:
+    if guy == 0:
+        print("you won!")
+    print("Game even! ")
